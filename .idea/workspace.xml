@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31e33a54-336d-420c-8918-5682e68873f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PokerHands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PokerHandsTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PokerHands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PokerHandsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../TeamProject/7.27/parking_lot_back_end" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/7.28_6.42PM/parking_lot_back_end" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/7.29_8.32AM" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/7.29_8.32AM/parking_lot_back_end" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/7.29_back_end_9.24AM/parking_lot_back_end" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/back_end_7.31/parking_lot_back_end" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/backend_7.31" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../TeamProject/backend_7.31/parking_lot_back_end" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/Java/2018-07-10-01-47-42-1531187262" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/Java/gradle-empty-stack-2019-7-5-15-58-18-862" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD/Gradle-builds-Java-projects-2019-7-12-8-47-48-372" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD/ParkingLot-2019-7-11-13-35-0-378" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD/code_smell/refactoring_techniques_practice-2019-6-14-6-41-33-583" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD/junit5-tdd-stack-2019-6-13-9-32-51-48" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD/unit-test-basic-2019-6-14-3-19-48-282" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../pratice/TDD/unit-test-mock-basic-2019-6-14-3-33-53-188" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../project/package-booking-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../project/temp_test/ParkingLot-2019-7-11-13-35-0-378" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../week2/Parking-Lot-Template-2019-7-18-8-5-49-775" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../week2/order-receipt-2019-6-14-6-44-33-528" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../week2/spring_data_jpa_practice-2019-7-18-3-42-49-390" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../week2/springboot-stack-2019-7-16-9-35-9-633" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../week2/springboot-stack-2019-7-17-9-32-17-210" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/hellowrold" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/parkinglot" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/PokerHandsTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="43" />
+    <option name="y" value="121" />
+    <option name="width" value="1599" />
+    <option name="height" value="1045" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31e33a54-336d-420c-8918-5682e68873f8" name="Default Changelist" comment="" />
+      <created>1565947310741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565947310741</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
