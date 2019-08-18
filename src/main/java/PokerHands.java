@@ -13,7 +13,7 @@ public class PokerHands {
             }else if(cards1.size() == 4){
                 result = compareTwoCardWithPair(cards1,cards2);
             }else if(cards1.size() == 3){
-                result = compareTwoCardWithTwoPair(cards1,cards2);
+                result = compareTwoCardWithTwoPairOrThreeKind(cards1,cards2);
             }
 
         }else {
@@ -65,25 +65,41 @@ public class PokerHands {
         }
         return result;
     }
-    public String compareTwoCardWithTwoPair(Map<Integer, Integer> cards1, Map<Integer, Integer> cards2){
-        String result = "draw";
+    public String compareTwoCardWithTwoPairOrThreeKind(Map<Integer, Integer> cards1, Map<Integer, Integer> cards2){
+        String result = null;
         Iterator<Map.Entry<Integer, Integer>> card1Iterator = cards1.entrySet().iterator();
         Iterator<Map.Entry<Integer, Integer>> card2Iterator = cards2.entrySet().iterator();
         Map<Integer, Integer> card1Pairs = new TreeMap<>((integer1, integer2) -> integer2 - integer1);
         Map<Integer, Integer> card2Pairs = new TreeMap<>((integer1, integer2) -> integer2 - integer1);
-        while (card1Iterator.hasNext() && card2Iterator.hasNext()){
-            Map.Entry<Integer, Integer> card1 = card1Iterator.next();
-            if(card1.getValue() == 2) card1Pairs.put(card1.getKey(),card1.getValue());
-            Map.Entry<Integer, Integer> card2 = card2Iterator.next();
-            if(2 == card2.getValue()) card2Pairs.put(card2.getKey(),card2.getValue());
+        if(getMapMaxValue(cards1) == getMapMaxValue(cards2)){
+            while (card1Iterator.hasNext() && card2Iterator.hasNext()){
+                Map.Entry<Integer, Integer> card1 = card1Iterator.next();
+                if(card1.getValue() == 2) card1Pairs.put(card1.getKey(),card1.getValue());
+                Map.Entry<Integer, Integer> card2 = card2Iterator.next();
+                if(2 == card2.getValue()) card2Pairs.put(card2.getKey(),card2.getValue());
+            }
+            if(card1Pairs != null && card2Pairs != null){
+                result = compareTwoCardWithHighestValue(card1Pairs, card2Pairs);
+                if("draw".equals(result)){
+                    result = compareTwoCardWithHighestValue(cards1,cards2);
+                }
+            }
+        }else{
+            result = getMapMaxValue(cards1) > getMapMaxValue(cards2) ? "player1 win" : "player2 win";
         }
-        result = compareTwoCardWithHighestValue(card1Pairs, card2Pairs);
-        if("draw".equals(result)){
-            result = compareTwoCardWithHighestValue(cards1,cards2);
-        }
+
         return result;
     }
+    public int getMapMaxValue(Map<Integer,Integer> map){
+        Iterator<Map.Entry<Integer, Integer>> iterator = map.entrySet().iterator();
 
+        int maxValue = iterator.next().getValue();
+        while (iterator.hasNext()){
+            Map.Entry<Integer, Integer> next = iterator.next();
+            maxValue = maxValue > next.getValue() ?maxValue:next.getValue();
+        }
+        return maxValue;
+    }
     public int compareCardMapSize(Map<Integer, Integer> cardMap1, Map<Integer, Integer> cardMap2){
         if(cardMap1.size() > cardMap2.size()){
             return 1;
