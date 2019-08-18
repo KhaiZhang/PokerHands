@@ -7,7 +7,14 @@ public class PokerHands {
     public String compareTwoCards(String player1Card, String player2Card) {
         List<Integer> cards1 = conversionCard(player1Card);
         List<Integer> cards2 = conversionCard(player2Card);
-        return cards1.get(4)>cards2.get(4)?"player1 win" : "player2 win";
+        String result = null;
+        for (int i = 4; i>=0; i--){
+            if(cards1.get(i).equals(cards2.get(i))){
+                continue;
+            }
+            result = cards1.get(i) > cards2.get(i)?"player1 win" : "player2 win";
+        }
+        return result;
     }
 
     public List<Integer> conversionCard(String cards){
@@ -59,7 +66,7 @@ public class PokerHands {
         result.sort(new Comparator<Integer>() {
             @Override
             public int compare(Integer integer1, Integer integer2) {
-                return integer2 - integer1;
+                return integer1 - integer2;
             }
         });
         return result;
