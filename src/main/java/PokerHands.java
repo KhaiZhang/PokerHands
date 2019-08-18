@@ -7,7 +7,7 @@ public class PokerHands {
     public String compareTwoCards(String player1Card, String player2Card) {
         List<Integer> cards1 = conversionCard(player1Card);
         List<Integer> cards2 = conversionCard(player2Card);
-        String result = null;
+        String result = "draw";
         for (int i = 4; i>=0; i--){
             if(cards1.get(i).equals(cards2.get(i))){
                 continue;
