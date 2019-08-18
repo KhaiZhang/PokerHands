@@ -12,6 +12,8 @@ public class PokerHands {
                 result = compareTwoCardWithHighestValue(cards1,cards2);
             }else if(cards1.size() == 4){
                 result = compareTwoCardWithPair(cards1,cards2);
+            }else if(cards1.size() == 3){
+                result = compareTwoCardWithTwoPair(cards1,cards2);
             }
 
         }else {
@@ -47,15 +49,13 @@ public class PokerHands {
         Integer card2Pair = null;
         while (card1Iterator.hasNext() && card2Iterator.hasNext()){
             Map.Entry<Integer, Integer> card1 = card1Iterator.next();
-            if(card1.getValue() == 2){
-                card1Pair = card1.getKey();
-            }
+            if(card1.getValue() == 2) card1Pair = card1.getKey();
+
             Map.Entry<Integer, Integer> card2 = card2Iterator.next();
-            if(card2.getValue() == 2){
-                card2Pair = card2.getKey();
-            }
+            if(2 == card2.getValue()) card2Pair = card2.getKey();
+
             if(card1Pair != null && card2Pair!= null){
-                if(card1Pair == card2Pair){
+                if(card1Pair.equals(card2Pair)){
                     result = compareTwoCardWithHighestValue(cards1,cards2);
                     break;
                 }
@@ -65,6 +65,22 @@ public class PokerHands {
         }
         return result;
     }
+    public String compareTwoCardWithTwoPair(Map<Integer, Integer> cards1, Map<Integer, Integer> cards2){
+        String result = "draw";
+        Iterator<Map.Entry<Integer, Integer>> card1Iterator = cards1.entrySet().iterator();
+        Iterator<Map.Entry<Integer, Integer>> card2Iterator = cards2.entrySet().iterator();
+        Map<Integer, Integer> card1Pairs = new TreeMap<>((integer1, integer2) -> integer2 - integer1);
+        Map<Integer, Integer> card2Pairs = new TreeMap<>((integer1, integer2) -> integer2 - integer1);
+        while (card1Iterator.hasNext() && card2Iterator.hasNext()){
+            Map.Entry<Integer, Integer> card1 = card1Iterator.next();
+            if(card1.getValue() == 2) card1Pairs.put(card1.getKey(),card1.getValue());
+            Map.Entry<Integer, Integer> card2 = card2Iterator.next();
+            if(2 == card2.getValue()) card2Pairs.put(card2.getKey(),card2.getValue());
+        }
+        result = compareTwoCardWithHighestValue(card1Pairs, card2Pairs);
+        return result;
+    }
+
     public int compareCardMapSize(Map<Integer, Integer> cardMap1, Map<Integer, Integer> cardMap2){
         if(cardMap1.size() > cardMap2.size()){
             return 1;
@@ -121,12 +137,7 @@ public class PokerHands {
                     break;
             }
         }
-        Map<Integer, Integer> result = new TreeMap<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer integer1, Integer integer2) {
-                return integer2 - integer1;
-            }
-        });
+        Map<Integer, Integer> result = new TreeMap<>((integer1, integer2) -> integer2 - integer1);
         for(int i=4; i>=0; i--){
             if(result.containsKey(cardWeight.get(i))){
                 Integer weight = result.get(cardWeight.get(i));
