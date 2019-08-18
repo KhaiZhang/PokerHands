@@ -78,6 +78,9 @@ public class PokerHands {
             if(2 == card2.getValue()) card2Pairs.put(card2.getKey(),card2.getValue());
         }
         result = compareTwoCardWithHighestValue(card1Pairs, card2Pairs);
+        if("draw".equals(result)){
+            result = compareTwoCardWithHighestValue(cards1,cards2);
+        }
         return result;
     }
 
