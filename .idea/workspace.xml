@@ -28,12 +28,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PokerHands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="27">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1843#1844#0" expanded="true" />
-                <element signature="e#1883#1884#0" expanded="true" />
+                <element signature="e#4533#4534#0" expanded="true" />
+                <element signature="e#4591#4592#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PokerHandsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="96">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,11 +159,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PokerHandsTest.should_return_player2_win_when_given_cards_H1_H2_H3_H4_ST_and_C1_C2_C3_C4_SA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerHandsTest.should_return_draw_when_given_cards_H2_S2_H3_H4_CA_and_C4_C2_C3_C5_SA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pokerhands.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PokerHandsTest" />
-      <option name="METHOD_NAME" value="should_return_player2_win_when_given_cards_H1_H2_H3_H4_ST_and_C1_C2_C3_C4_SA" />
+      <option name="METHOD_NAME" value="should_return_draw_when_given_cards_H2_S2_H3_H4_CA_and_C4_C2_C3_C5_SA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokerHandsTest.should_return_player1_win_when_given_cards_C6_C2_C3_C5_SA_and_H5_H2_H3_H4_CA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokerhands.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PokerHandsTest" />
+      <option name="METHOD_NAME" value="should_return_player1_win_when_given_cards_C6_C2_C3_C5_SA_and_H5_H2_H3_H4_CA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H4_CA_and_C4_C2_C3_C5_SA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokerhands.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PokerHandsTest" />
+      <option name="METHOD_NAME" value="should_return_player1_win_when_given_cards_H2_S2_H3_H4_CA_and_C4_C2_C3_C5_SA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokerhands.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PokerHandsTest" />
+      <option name="METHOD_NAME" value="should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,7 +202,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PokerHandsTest" />
-        <item itemvalue="JUnit.PokerHandsTest.should_return_player2_win_when_given_cards_H1_H2_H3_H4_ST_and_C1_C2_C3_C4_SA" />
+        <item itemvalue="JUnit.PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA" />
+        <item itemvalue="JUnit.PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H4_CA_and_C4_C2_C3_C5_SA" />
+        <item itemvalue="JUnit.PokerHandsTest.should_return_draw_when_given_cards_H2_S2_H3_H4_CA_and_C4_C2_C3_C5_SA" />
+        <item itemvalue="JUnit.PokerHandsTest.should_return_player1_win_when_given_cards_C6_C2_C3_C5_SA_and_H5_H2_H3_H4_CA" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +219,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566118228846</updated>
-      <workItem from="1566118233136" duration="5325000" />
+      <workItem from="1566118233136" duration="11663000" />
     </task>
     <task id="LOCAL-00001" summary="[feat:implement compare two card with higtest value card]">
       <created>1566122885632</created>
@@ -203,43 +235,57 @@
       <option name="project" value="LOCAL" />
       <updated>1566123695260</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[feat:implement return draw when two cards is equal ]">
+      <created>1566123851885</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566123851885</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[feat:implement compare pair and not pair cards then return player win which has pair cards]">
+      <created>1566128836799</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566128836799</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 05m 58s.xml">
+    <history-entry file="PokerHandsTest - 2019.08.18 at 19h 38m 10s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 15m 00s.xml">
+    <history-entry file="PokerHandsTest - 2019.08.18 at 19h 44m 42s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 15m 20s.xml">
+    <history-entry file="PokerHandsTest - 2019.08.18 at 19h 45m 32s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 16m 25s.xml">
+    <history-entry file="PokerHandsTest - 2019.08.18 at 19h 55m 25s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 17m 09s.xml">
+    <history-entry file="PokerHandsTest - 2019.08.18 at 19h 56m 39s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 17m 39s.xml">
+    <history-entry file="PokerHandsTest - 2019.08.18 at 20h 16m 06s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 18m 27s.xml">
+    <history-entry file="PokerHandsTest_should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA - 2019.08.18 at 20h 16m 44s.xml">
+      <configuration name="PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerHandsTest - 2019.08.18 at 20h 17m 27s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 18m 43s.xml">
-      <configuration name="PokerHandsTest" configurationId="JUnit" />
+    <history-entry file="PokerHandsTest_should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA - 2019.08.18 at 20h 18m 33s.xml">
+      <configuration name="PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 20m 00s.xml">
-      <configuration name="PokerHandsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.18 at 18h 20m 14s.xml">
-      <configuration name="PokerHandsTest" configurationId="JUnit" />
+    <history-entry file="PokerHandsTest_should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA - 2019.08.18 at 20h 20m 39s.xml">
+      <configuration name="PokerHandsTest.should_return_player1_win_when_given_cards_H2_S2_H3_H6_CA_and_D5_C2_C3_C5_SA" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5325000" />
+    <option name="totallyTimeSpent" value="11663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -250,7 +296,7 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Build" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" />
@@ -261,7 +307,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2672131" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45409837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,7 +330,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feat:implement compare two card with higtest value card]" />
     <MESSAGE value="[feat:implement compare two card with two higtest value card when the higtest value is euqal]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat:implement compare two card with two higtest value card when the higtest value is euqal]" />
+    <MESSAGE value="[feat:implement return draw when two cards is equal ]" />
+    <MESSAGE value="[feat:implement compare pair and not pair cards then return player win which has pair cards]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat:implement compare pair and not pair cards then return player win which has pair cards]" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/java/lang/String.class">
@@ -296,8 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PokerHandsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="96">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -306,12 +354,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PokerHands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="27">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#4533#4534#0" expanded="true" />
+            <element signature="e#4591#4592#0" expanded="true" />
           </folding>
         </state>
       </provider>

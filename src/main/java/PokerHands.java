@@ -6,26 +6,61 @@ public class PokerHands {
         Map<Integer, Integer> cards1 = conversionCard(player1Card);
         Map<Integer, Integer> cards2 = conversionCard(player2Card);
         String result = "draw";
+
         if(compareCardMapSize(cards1,cards2) == 0){
-            Iterator<Map.Entry<Integer, Integer>> card1Iterator = cards1.entrySet().iterator();
-            Iterator<Map.Entry<Integer, Integer>> card2Iterator = cards2.entrySet().iterator();
-            while(card1Iterator.hasNext() && card2Iterator.hasNext()){
-                Map.Entry<Integer, Integer> cardEntry1 = card1Iterator.next();
-                Map.Entry<Integer, Integer> cardEntry2 = card2Iterator.next();
-                System.out.println(cardEntry1.getKey() + "  :  " + cardEntry2.getKey());
-                if(cardEntry1.getKey() == cardEntry2.getKey()){
-                    continue;
-                }
-                result = cardEntry1.getKey() > cardEntry2.getKey()?"player1 win" : "player2 win";
-                break;
+            if(cards1.size() == 5){
+                result = compareTwoCardWithHighestValue(cards1,cards2);
+            }else if(cards1.size() == 4){
+                result = compareTwoCardWithPair(cards1,cards2);
             }
+
         }else {
             result = compareCardMapSize(cards1,cards2) == -1?"player1 win" : "player2 win";
         }
 
         return result;
     }
+    public String compareTwoCardWithHighestValue(Map<Integer, Integer> cards1, Map<Integer, Integer> cards2){
+        String result = "draw";
+        Iterator<Map.Entry<Integer, Integer>> card1Iterator = cards1.entrySet().iterator();
+        Iterator<Map.Entry<Integer, Integer>> card2Iterator = cards2.entrySet().iterator();
+        while(card1Iterator.hasNext() && card2Iterator.hasNext()){
+            Map.Entry<Integer, Integer> cardEntry1 = card1Iterator.next();
+            Map.Entry<Integer, Integer> cardEntry2 = card2Iterator.next();
+            System.out.println(cardEntry1.getKey() + "  :  " + cardEntry2.getKey());
+            if(cardEntry1.getKey() == cardEntry2.getKey()){
+                continue;
+            }
+            result = cardEntry1.getKey() > cardEntry2.getKey()?"player1 win" : "player2 win";
+            break;
+        }
+        return result;
+    }
 
+    public String compareTwoCardWithPair(Map<Integer, Integer> cards1, Map<Integer, Integer> cards2){
+        System.out.println("compareTwoCardWithPair");
+        String result = "draw";
+        Iterator<Map.Entry<Integer, Integer>> card1Iterator = cards1.entrySet().iterator();
+        Iterator<Map.Entry<Integer, Integer>> card2Iterator = cards2.entrySet().iterator();
+        Integer card1Pair = null;
+        Integer card2Pair = null;
+        while (card1Iterator.hasNext() && card2Iterator.hasNext()){
+            Map.Entry<Integer, Integer> card1 = card1Iterator.next();
+            if(card1.getValue() == 2){
+                card1Pair = card1.getKey();
+            }
+            Map.Entry<Integer, Integer> card2 = card2Iterator.next();
+            if(card2.getValue() == 2){
+                card2Pair = card2.getKey();
+            }
+            if(card1Pair != null && card2Pair!= null){
+                System.out.println(card1Pair + " : " + card2Pair);
+                result = card1Pair > card2Pair?"player1 win" : "player2 win";
+                break;
+            }
+        }
+        return result;
+    }
     public int compareCardMapSize(Map<Integer, Integer> cardMap1, Map<Integer, Integer> cardMap2){
         if(cardMap1.size() > cardMap2.size()){
             return 1;
@@ -82,12 +117,12 @@ public class PokerHands {
                     break;
             }
         }
-        cardWeight.sort(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer integer1, Integer integer2) {
-                return integer1 - integer2;
-            }
-        });
+//        cardWeight.sort(new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer integer1, Integer integer2) {
+//                return integer1 - integer2;
+//            }
+//        });
         Map<Integer, Integer> result = new TreeMap<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer integer1, Integer integer2) {
