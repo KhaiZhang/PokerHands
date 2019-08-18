@@ -54,7 +54,10 @@ public class PokerHands {
                 card2Pair = card2.getKey();
             }
             if(card1Pair != null && card2Pair!= null){
-                System.out.println(card1Pair + " : " + card2Pair);
+                if(card1Pair == card2Pair){
+                    result = compareTwoCardWithHighestValue(cards1,cards2);
+                    break;
+                }
                 result = card1Pair > card2Pair?"player1 win" : "player2 win";
                 break;
             }
