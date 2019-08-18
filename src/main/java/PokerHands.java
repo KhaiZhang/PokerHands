@@ -15,6 +15,7 @@ public class PokerHands {
             }
 
         }else {
+            System.out.println("mapSize is not equal;");
             result = compareCardMapSize(cards1,cards2) == -1?"player1 win" : "player2 win";
         }
 
@@ -120,12 +121,6 @@ public class PokerHands {
                     break;
             }
         }
-//        cardWeight.sort(new Comparator<Integer>() {
-//            @Override
-//            public int compare(Integer integer1, Integer integer2) {
-//                return integer1 - integer2;
-//            }
-//        });
         Map<Integer, Integer> result = new TreeMap<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer integer1, Integer integer2) {
@@ -137,8 +132,6 @@ public class PokerHands {
                 Integer weight = result.get(cardWeight.get(i));
                 weight++;
                 result.put(cardWeight.get(i),weight);
-                System.out.println("weight: "+weight);
-                System.out.println("mapWeight: "+ result.get(cardWeight.get(i)));
                 continue;
             }
             result.put(cardWeight.get(i),1);
