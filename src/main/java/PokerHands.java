@@ -11,7 +11,11 @@ public class PokerHands {
                 if(getStraightMaxValue(cards1) == 0 && getStraightMaxValue(cards2) == 0){
                     result = compareTwoCardWithHighestValue(cards1,cards2);
                 }else {
-                    result = getStraightMaxValue(cards1) > getStraightMaxValue(cards2)?"player1 win" : "player2 win";
+                    if(getStraightMaxValue(cards1) == getStraightMaxValue(cards2)){
+                        result = "draw";
+                    }else {
+                        result = getStraightMaxValue(cards1) > getStraightMaxValue(cards2)?"player1 win" : "player2 win";
+                    }
                 }
             }else if(cards1.size() == 4){
                 result = compareTwoCardWithPair(cards1,cards2);
