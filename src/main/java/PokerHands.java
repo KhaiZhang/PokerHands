@@ -6,21 +6,26 @@ public class PokerHands {
         Map<Integer, Integer> cards1 = conversionCard(player1Card);
         Map<Integer, Integer> cards2 = conversionCard(player2Card);
         String result = "draw";
-
         if(compareCardMapSize(cards1,cards2) == 0){
             if(cards1.size() == 5){
-                result = compareTwoCardWithHighestValue(cards1,cards2);
+                if(getStraightMaxValue(cards1) == 0 && getStraightMaxValue(cards2) == 0){
+                    result = compareTwoCardWithHighestValue(cards1,cards2);
+                }else {
+                    result = getStraightMaxValue(cards1) > getStraightMaxValue(cards2)?"player1 win" : "player2 win";
+                }
             }else if(cards1.size() == 4){
                 result = compareTwoCardWithPair(cards1,cards2);
             }else if(cards1.size() == 3){
                 result = compareTwoCardWhenMapSizeIsThree(cards1,cards2);
             }
-
         }else {
-            System.out.println("mapSize is not equal;");
-            result = compareCardMapSize(cards1,cards2) == -1?"player1 win" : "player2 win";
-        }
+            if(getStraightMaxValue(cards1) == 0 && getStraightMaxValue(cards2) == 0){
+                result = compareCardMapSize(cards1,cards2) == -1?"player1 win" : "player2 win";
+            }else {
+                result = getStraightMaxValue(cards1) > getStraightMaxValue(cards2)?"player1 win" : "player2 win";
+            }
 
+        }
         return result;
     }
     public String compareTwoCardWithHighestValue(Map<Integer, Integer> cards1, Map<Integer, Integer> cards2){
@@ -111,6 +116,23 @@ public class PokerHands {
         }
         return maxValueEntry;
     }
+
+    public int getStraightMaxValue(Map<Integer, Integer> card){
+        Iterator<Map.Entry<Integer, Integer>> iterator = card.entrySet().iterator();
+        Map.Entry<Integer, Integer> lastCard = iterator.next();
+        int result = lastCard.getKey();
+        while (iterator.hasNext()){
+            Map.Entry<Integer, Integer> currentCard = iterator.next();
+            if((lastCard.getKey() - currentCard.getKey()) == 1){
+                lastCard = currentCard;
+            }else {
+                System.out.println("00000000");
+                return 0;
+            }
+        }
+        return result;
+    }
+
     public int compareCardMapSize(Map<Integer, Integer> cardMap1, Map<Integer, Integer> cardMap2){
         if(cardMap1.size() > cardMap2.size()){
             return 1;

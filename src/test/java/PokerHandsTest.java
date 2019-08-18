@@ -106,11 +106,20 @@ public class PokerHandsTest {
     }
 
     @Test
-    public void should_return_player1_win_when_given_cards_C2_D3_C3_S3_ST_and_H3_S5_H5_D5_C9() {
+    public void should_return_player2_win_when_given_cards_C2_D3_C3_S3_ST_and_H3_S5_H5_D5_C9() {
         PokerHands pokerHands = new PokerHands();
         String player1Card = "C2 D3 C3 S3 ST";
         String player2Card = "H2 S5 H5 D5 C9";
         String result = pokerHands.compareTwoCards(player1Card, player2Card);
         Assert.assertEquals("player2 win", result);
+    }
+
+    @Test
+    public void should_return_player1_win_when_given_cards_C2_D3_C4_S5_S6_and_H3_S5_H5_D5_C9() {
+        PokerHands pokerHands = new PokerHands();
+        String player1Card = "C2 D3 C4 S5 S6";
+        String player2Card = "H3 S5 H5 D5 C9";
+        String result = pokerHands.compareTwoCards(player1Card, player2Card);
+        Assert.assertEquals("player1 win", result);
     }
 }
